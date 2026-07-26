@@ -128,6 +128,7 @@
   </style>
   <script src="assets/ga.js"></script>
   <script src="assets/hs.js"></script>
+  <script src="assets/li.js"></script>
 </head>
 <body>
 
@@ -413,8 +414,9 @@
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(Object.assign({ _subject: 'Novo lead — LP IA', _template: 'table' }, d))
       }).catch(function(){});
-      // 2) Evento de conversão no GA4
+      // 2) Evento de conversão no GA4 + LinkedIn
       if (window.gaEvent) gaEvent('generate_lead', { page: 'lp-ia' });
+      if (window.liConvert) liConvert();
       // 3) Feedback + leva o lead pro WhatsApp já preenchido
       document.getElementById('lpOk').classList.add('show');
       window.open(waLink(resumo), '_blank', 'noopener');
