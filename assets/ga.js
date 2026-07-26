@@ -2,11 +2,11 @@
    ─────────────────────────────────────────────────────────────
    1) Crie uma propriedade GA4 em analytics.google.com
    2) Admin → Fluxos de dados → Web → copie o "ID de métrica" (começa com G-)
-   3) Cole abaixo no lugar de G-XXXXXXXXXX
+   3) Cole abaixo no lugar de G-CMQYT4QZS0
    O MESMO ID pode ser usado no site e nas duas LPs — nos relatórios você
    separa por página/host. (Cada pasta tem a sua cópia deste arquivo.)
    ───────────────────────────────────────────────────────────── */
-var GA_ID = 'G-XXXXXXXXXX';
+var GA_ID = 'G-CMQYT4QZS0';
 
 (function () {
   if (!GA_ID || GA_ID.indexOf('XXXX') !== -1) return; // não dispara enquanto for placeholder
