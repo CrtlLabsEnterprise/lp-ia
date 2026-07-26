@@ -6,7 +6,7 @@
    base roda (rastreio de visitas + público de remarketing).
    ───────────────────────────────────────────────────────────── */
 var LI_PARTNER_ID   = '9405074';
-var LI_CONVERSION_ID = 'CONVERSION_ID';
+var LI_CONVERSION_ID = '29021938';
 
 (function () {
   window._linkedin_partner_id = LI_PARTNER_ID;
